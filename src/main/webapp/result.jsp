@@ -9,8 +9,8 @@
  
     <body> 
         <div id="result">
-            
-                 <div id="result">
+           <%="4 x 7 = " + m.multiply(4, 7)%>> 
+                
             <h3>${requestScope["messagee"]}</h3>
         </div>
       
