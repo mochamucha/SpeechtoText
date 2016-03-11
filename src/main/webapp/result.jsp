@@ -9,13 +9,12 @@
  
     <body> 
         <div id="result">
-            <h3>
-                <script> var text = ${requestScope["message"]};
-                obj = JSON.parse(text);
-                document.getElementById("result").innerHTML =
-                obj.results.transcript;
-                </script>
-            </h3>
+            
+                 <div id="result">
+            <h3>${requestScope["tempo"]}</h3>
+        </div>
+      
+   
         
 
         </div>

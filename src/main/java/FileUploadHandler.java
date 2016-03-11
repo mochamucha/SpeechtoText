@@ -51,8 +51,9 @@ public class FileUploadHandler extends HttpServlet {
                         
                         SpeechResults output = service.recognize(audio, "audio/wav");
                         String print = output.toString();
+                        String tempo = print.replace("com.ibm.watson.developer_cloud.speech_to_text.v1.model.SpeechResults",""); 
                         
-                        request.setAttribute("message", print);     
+                        request.setAttribute("message", tempo);     
     
                     }
                 }
